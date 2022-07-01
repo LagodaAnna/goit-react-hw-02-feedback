@@ -9,10 +9,10 @@ export const Button = styled.button`
   padding-bottom: ${p => p.theme.space[3]};
   font-size: ${p => p.theme.fontSizes.m};
   border-radius: ${p => p.theme.radii.normal};
-  border: none;
-  outline: none;
   background-color: ${p => p.theme.colors.buttonBg};
   box-shadow: ${p => p.theme.shadows.normal};
+  border: none;
+  outline: none;
   transition: box-shadow 250ms;
 
   &:not(:last-child) {

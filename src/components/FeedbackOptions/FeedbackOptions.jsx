@@ -4,22 +4,14 @@ import { Button } from './FeedbackOptions.styled';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   const icons = [BsEmojiHeartEyes, BsEmojiNeutral, BsEmojiFrown];
-  console.log(icons);
-  // const updateOptions = options.map((option, index) => {
-  //   return {
-  //     label: option,
-  //     icon: icons[index],
-  //   };
-  // });
+  const updateOptions = options.map((option, index) => {
+    return {
+      label: option,
+      icon: icons[index],
+    };
+  });
 
-  const updateOptions = [
-    { label: 'a', icon: BsEmojiHeartEyes },
-    { label: 'b', icon: BsEmojiNeutral },
-    { label: 'c', icon: BsEmojiFrown },
-  ];
-
-  console.log(updateOptions);
-  return options.map(({ label, icon: Icon }) => {
+  return updateOptions.map(({ label, icon: Icon }) => {
     return (
       <Button type="button" onClick={onLeaveFeedback} key={label}>
         <Icon />
