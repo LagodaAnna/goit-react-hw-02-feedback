@@ -11,6 +11,7 @@ export const Button = styled.button`
   border-radius: ${p => p.theme.radii.normal};
   background-color: ${p => p.theme.colors.buttonBg};
   box-shadow: ${p => p.theme.shadows.normal};
+  font-family: inherit;
   border: none;
   outline: none;
   transition: box-shadow 250ms;
